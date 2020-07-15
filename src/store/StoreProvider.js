@@ -5,7 +5,9 @@ export const StoreContext = createContext();
 
 const StoreProvider = ({ children }) => {
   const store = useLocalStore(() => ({
-    books: ['American Gods', 'The Beautiful and the Damned']
+    books: [],
+    // able to mutate state; mobx tracks changes for us
+    addBook: book => store.books.push(book)
   }));
 
   return (
