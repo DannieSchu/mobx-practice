@@ -5,7 +5,7 @@ export const StoreContext = createContext();
 
 const StoreProvider = ({ children }) => {
   const store = useLocalStore(() => ({
-    books: []
+    books: ['American Gods', 'The Beautiful and the Damned']
   }));
 
   return (
