@@ -2,10 +2,12 @@ import React from 'react';
 import StoreProvider from '../../store/StoreProvider';
 import BooksList from '../BooksList/BooksList';
 import BooksForm from '../BooksForm/BooksForm';
+import Header from '../Header/Header';
 
 function App() {
   return (
     <StoreProvider>
+      <Header />
       <h1>My Bookshelf</h1>
       <BooksList />
       <BooksForm />
