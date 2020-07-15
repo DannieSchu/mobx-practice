@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useObserver } from 'mobx-react';
-import { StoreContext } from '../../store/StoreProvider';
+import { useBooksStore } from '../../stores/BooksStore';
 
 const Header = () => {
-  const store = useContext(StoreContext);
+  const store = useBooksStore();
   
   return useObserver(() => (
     <h3>Number of Books: {store.booksCount}</h3>

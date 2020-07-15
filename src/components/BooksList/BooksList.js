@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useObserver } from 'mobx-react';
-import { StoreContext } from '../../store/StoreProvider';
+import { useBooksStore } from '../../stores/BooksStore';
 
 const BooksList = () => {
-  const store = useContext(StoreContext);
+  const store = useBooksStore();
 
   // track changes
   return useObserver(() => (

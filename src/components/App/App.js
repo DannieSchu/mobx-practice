@@ -1,5 +1,5 @@
 import React from 'react';
-import StoreProvider from '../../store/StoreProvider';
+import { StoreProvider } from '../../stores/BooksStore';
 import BooksList from '../BooksList/BooksList';
 import BooksForm from '../BooksForm/BooksForm';
 import Header from '../Header/Header';

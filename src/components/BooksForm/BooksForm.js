@@ -1,8 +1,8 @@
-import React, { useContext, useState } from 'react';
-import { StoreContext } from '../../store/StoreProvider';
+import React, { useState } from 'react';
+import { useBooksStore } from '../../stores/BooksStore';
 
 const BooksForm = () => {
-  const store = useContext(StoreContext);
+  const store = useBooksStore();
   const [book, setBook] = useState('');
 
   return (
